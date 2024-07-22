@@ -1,0 +1,111 @@
+/* Import Google Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Ensure the container takes up the full viewport height */
+.sign-up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f9fc; /* Light background color */
+}
+
+/* Style the card with padding, border radius, and shadow */
+.sign-up-card {
+    padding: 2rem;
+    border-radius: 0.75rem; /* Slightly rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff; /* White background for the card */
+    max-width: 400px; /* Reduced width */
+    width: 100%;
+}
+
+/* Style the heading inside the card */
+.sign-up-card h1 {
+    font-size: 1.875rem; /* 30px */
+    color: #333; /* Dark gray color */
+    text-align: center;
+    margin-bottom: 1.5rem; /* Reduced margin */
+}
+
+/* Style the form for layout and spacing */
+.sign-up-card .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between form elements */
+}
+
+/* Style individual input fields */
+.sign-up-card .input-group input {
+    padding: 1rem;
+    border-radius: 0.375rem; /* Rounded corners */
+    border: 1px solid #dcdcdc; /* Light gray border */
+    outline: none;
+    font-size: 1rem; /* Normal text size */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%; /* Full width */
+}
+
+/* Style the input fields on focus */
+.sign-up-card .input-group input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2); /* Light blue shadow */
+}
+
+/* Style the submit buttons */
+.sign-up-card .submit-btn,
+.sign-up-card .google-btn {
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    border: none;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+    margin-top: 0.5rem; /* Add margin for spacing */
+}
+
+/* Style the submit button on hover */
+.sign-up-card .submit-btn:hover,
+.sign-up-card .google-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the secondary button */
+.sign-up-card .google-btn {
+    background-color: #db4437; /* Google red */
+    border: none;
+}
+
+/* Style the secondary button on hover */
+.sign-up-card .google-btn:hover {
+    background-color: #c1351d; /* Darker red on hover */
+}
+
+/* Style the error message */
+.sign-up-card .error {
+    color: #d93025; /* Red color for errors */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Style the footer section with a link */
+.sign-up-card .footer {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Style the link text */
+.sign-up-card .footer .link {
+    color: #007bff; /* Blue color for the link */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Style the link text on hover */
+.sign-up-card .footer .link:hover {
+    text-decoration: underline;
+}

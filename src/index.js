@@ -12,6 +12,8 @@ import Feedback from './Components/Feedback';
 import Header from './Components/Header';
 import './App.css'; // Make sure this path is correct based on your project structure
 import MatchQuestions from './MatchQuestions';
+import SignUp from './SignUp'; // Import SignUp component
+import Login from './Login';   // Import Login component
 
 // lib/utils.ts
 import clsx from "clsx";
@@ -21,9 +23,7 @@ export function cn(...inputs) {
   return twMerge(clsx(inputs));
 }
 
-
-
-export default function MyPage() {
+function MyPage() {
   const [curPage, setPage] = useState(0); // Initialize curPage state with 0
 
   // Function to handle page change
@@ -73,7 +73,9 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<MyPage />} />
+        <Route path="/" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<MyPage />} />
         <Route path="/match-questions" element={<MatchQuestions />} />
       </Routes>
     </Router>
