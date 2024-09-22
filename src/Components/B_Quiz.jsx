@@ -65,7 +65,7 @@ const MissionPlanetHopper = ({ setQuizPage }) => {
                 <br />
                 • The expansion of the Universe
                 <br />
-                • Formation of galaxies
+                • Formation of 4 galaxies
                 <br />
                 • Star life cycles
                 <br />
